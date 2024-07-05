@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&family=Kalam:wght@700&family=Nosifer&family=Playfair+Display&family=Sofia+Sans+Condensed&display=swap");
+.NavBar {
+  width: 100%;
+  height: 101px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.NavBar img {
+  width: 100%;
+  height: 10px;
+}
+
+.navBG {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* left side  */
+
+.leftSide {
+  margin: auto 111px;
+
+  display: flex;
+  width: 221px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+.leftSide img {
+  width: 56px;
+  height: 56px;
+}
+
+.leftSide h1 {
+  width: 149px;
+  height: 33px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 7.84px;
+}
+
+/*  right side  */
+
+.rightSide {
+  margin-top: 30px;
+  align-items: center;
+
+  display: flex;
+  margin: auto;
+  margin-right: 111px;
+  padding-left: 50px;
+  width: 682px;
+  height: 37px;
+}
+
+.rightSide ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.rightSide li {
+  cursor: pointer;
+  width: 63px;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.24px;
+}
+.rightSide .thismonth {
+  cursor: pointer;
+  width: 126px;
+}
+/* button */
+
+.rightSide button {
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  width: 124px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 300px;
+  border: 2px solid #000;
+  background: #fff;
+
+  margin-left: 10.5px;
+}
+
+.rightSide button span {
+  padding-left: 5px;
+  width: 83px;
+  height: 18px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.68px;
+}
+.rightSide button:hover {
+  border: 2px solid #ef8094;
+  background-color: #ef8094;
+  transition: 0.4s;
+}
+.rightSide button:hover span {
+  transition: 0.4s;
+  color: #fff;
+}
+
+.rightSide li:hover {
+  transition: 0.2s;
+  scale: 1.1;
+  color: #ef8094;
+  font-size: 17px;
+}
+
+.rightSide .thismonth:hover span {
+  transition: 0.2s;
+  scale: 1.1;
+  color: #ef8094;
+  font-size: 17px;
+}
+/* icon */
+.navBG i {
+  cursor: pointer;
+  margin: auto 18px;
+  font-size: 55px;
+  display: none;
+}
+.skinDropdown ul {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  border: 2px solid pink;
+  width: 190px;
+  height: 200px;
+  position: absolute;
+  z-index: 1;
+  padding-right: 40px;
+  background: #fff;
+}
+
+/* ====== doropdown menus ======== TODO: */
+.DropdownMenu {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 220px;
+  background: #84d2ee;
+  margin-top: 25px;
+  border-radius: 20px;
+}
+.DropdownMenu .item {
+  margin: 14px auto;
+  cursor: pointer;
+  list-style: none;
+  color: #000;
+  font-size: 26px;
+  outline: none;
+}
+
+.item:hover {
+  color: #fff;
+  scale: 1.1;
+  transition: 0.2s;
+}
+
+/* media */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+@media (max-width: 768px) {
+  .NavBar img {
+    width: 768px;
+  }
+  .leftSide {
+    margin: auto 25px;
+    margin-right: 10px;
+  }
+  .rightSide {
+    margin-top: 30px;
+    padding-left: 0px;
+    margin-right: 0px;
+    flex-direction: row;
+  }
+  .rightSide ul {
+    gap: 0px;
+  }
+  .rightSide button {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 769px) {
+  .NavBar img {
+    width: 100%;
+  }
+  .leftSide {
+    margin: auto 30px;
+    margin-right: 0;
+  }
+  .rightSide {
+    margin-top: 30px;
+    padding-left: 0px;
+    margin-right: 0px;
+    flex-direction: row;
+  }
+  .rightSide ul {
+    gap: 0px;
+  }
+  .rightSide button {
+    margin-left: 2px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 1px) {
+  .NavBar img {
+    max-width: 800px;
+    width: 100%;
+  }
+  .navBG i {
+    cursor: pointer;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 1%;
+  }
+  .rightSide {
+    background-color: #84d2ee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    height: 700px;
+    right: 0;
+    top: 65px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .rightSide ul {
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+  .rightSide li {
+    font-size: 24px;
+  }
+
+  .rightSide .thismonth {
+    margin-left: 40px;
+    width: 190px;
+  }
+
+  .rightSide button {
+    margin: 40px auto;
+    width: 200px;
+    height: 61px;
+    border: none;
+    border-radius: 300px;
+    background: #fff;
+    color: #ef8094;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+  }
+
+  .rightSide button span {
+    margin-top: 10px;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    width: 112px;
+    height: 29px;
+    transition: color 0.4s;
+  }
+
+  .rightSide button:hover {
+    background-color: #ef8094;
+    color: #fff;
+  }
+
+  .rightSide li:hover {
+    color: #fff;
+    font-size: 26px;
+  }
+
+  .rightSide.show-sidebar {
+    display: flex;
+  }
+}

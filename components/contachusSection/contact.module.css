@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&family=Kalam:wght@700&family=Nosifer&family=Playfair+Display&family=Sofia+Sans+Condensed&display=swap");
+.container {
+  width: 100%;
+  height: 846px;
+  flex-shrink: 0;
+}
+.container img {
+  width: 100%;
+  height: 846px;
+  position: absolute;
+  z-index: -1;
+}
+
+/*  */
+/*  */
+/*  */
+.content {
+  margin: 75px auto;
+  left: 0;
+  padding: 36.5px 27px 41.548px 38.267px;
+  gap: 50px;
+  right: 0;
+  position: absolute;
+
+  display: flex;
+  width: 1100px;
+  height: 560px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(19px);
+}
+
+/* leftSide */
+.leftSide {
+  display: flex;
+  width: 542.661px;
+  height: 481.952px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.leftSide img {
+  margin: 36px auto;
+  width: 542.661px;
+  height: 481.952px;
+  flex-shrink: 0;
+}
+
+/* rightSide */
+.rightSide h1 {
+  color: #000;
+  font-family: DM Serif Text;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+}
+.rightSide {
+  display: flex;
+  flex-direction: column;
+
+  width: 442px;
+  height: 481px;
+  flex-shrink: 0;
+}
+
+.rightSide input:first-of-type {
+  width: 419px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #e7e7e7;
+  background: #f3f3f3;
+}
+.rightSide h4 {
+  margin-top: 15px;
+  margin-bottom: 4px;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.rightSide h4:nth-of-type(2) {
+  margin-top: 36px;
+}
+
+.rightSide input {
+  margin: auto;
+  width: 419px;
+  height: 134px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #e7e7e7;
+  background: #f3f3f3;
+}
+
+.rightSide input::placeholder {
+  top: 0;
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 253px;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.rightSide button {
+  margin: auto;
+  cursor: pointer;
+  margin-top: 80px;
+  width: 160px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #ef8094;
+  border: none;
+  border: 3px solid #f8eeee;
+}
+
+.rightSide button:hover {
+  border-radius: 5px;
+  border: 3px solid #f8eeee;
+  background: rgb(53, 205, 255);
+  transform: scale(1.1);
+  width: 200px;
+}
+.rightSide button:hover span {
+  font-size: 28px;
+}
+.rightSide button span {
+  color: #fff;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.rightSide input[type="email"] {
+  padding-left: 10px;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.rightSide input[type="text"] {
+  padding-bottom: 90px;
+  padding-left: 15px;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.submittedMessage {
+  position: absolute;
+  bottom: 0;
+  margin: 120px 60px;
+  width: 400px;
+  color: green;
+  font-size: 26px;
+}
+
+@media (max-width: 1280px) and (min-width: 767px) {
+  .content {
+    display: flex;
+    width: 734px;
+    height: 560px;
+    padding: 37px 22px 42px 38px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+  }
+  .leftSide {
+    display: flex;
+    width: 368px;
+    padding: 0px 2.744px 0px 0.267px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .leftSide img {
+    position: absolute;
+    width: 364.989px;
+    height: 481.952px;
+    flex-shrink: 0;
+  }
+
+  .rightSide {
+    width: 274px;
+    height: 481px;
+    flex-shrink: 0;
+  }
+
+  .rightSide input:first-of-type {
+    width: 257px;
+  }
+  .rightSide input {
+    width: 257px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 1px) {
+  .content {
+    display: flex;
+    width: 341px;
+    height: 700px;
+    padding: 36px 29px 17px 37px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .leftSide {
+    display: flex;
+    height: 143px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftSide img {
+    width: 266px;
+    height: 157.943px;
+    flex-shrink: 0;
+  }
+
+  .rightSide {
+    width: 275px;
+    height: 481px;
+  }
+  .rightSide input:first-of-type {
+    width: 275px;
+  }
+  .rightSide input {
+    width: 275px;
+  }
+}

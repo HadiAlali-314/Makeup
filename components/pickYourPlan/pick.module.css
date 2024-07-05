@@ -1,0 +1,301 @@
+.container {
+  width: 100%;
+  height: 624px;
+  flex-shrink: 0;
+}
+
+.content {
+  margin: 70px auto;
+
+  width: 1270px;
+  height: 553px;
+  flex-shrink: 0;
+}
+
+/* title */
+
+.title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0 auto;
+  width: 511px;
+  height: 123px;
+  flex-shrink: 0;
+}
+
+.title h1 {
+  color: #000;
+
+  font-family: DM Serif Text;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 116.667% */
+}
+
+/* bottom */
+
+.bottom {
+  width: 675px;
+  height: 96px;
+  flex-shrink: 0;
+
+  margin: 38px auto;
+}
+
+.bottom h1 {
+  color: #000;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.18px;
+}
+
+/* middle */
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+  height: 291px;
+  width: 1270px;
+
+  margin: auto;
+}
+
+.cards {
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+  gap: 20px;
+
+  display: flex;
+  margin-bottom: 139px;
+  width: 575px;
+  height: 291px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 4px solid #c4c4c4;
+  border-color: rgba(196, 196, 196, 0.3);
+}
+
+.cards svg {
+  z-index: -1;
+  position: absolute;
+  width: 575px;
+  height: 291px;
+  flex-shrink: 0;
+
+  flex-shrink: 0;
+  fill: #f5f8ff;
+}
+
+.cards h1 {
+  color: #000;
+  text-align: center;
+  font-family: DM Serif Text;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cards h2 {
+  color: #000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 5.28px;
+}
+
+.cards button {
+  cursor: pointer;
+  width: 200px;
+  height: 61px;
+  flex-shrink: 0;
+  border-radius: 300px;
+  border: 4px solid #ef8094;
+  background: #ef8094;
+}
+
+.cards button span {
+  width: 163px;
+  height: 29px;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.92px;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/* media */
+
+@media (min-width: 1281px) and (max-width: 1650px) {
+  .content {
+    width: 1270px;
+    height: 553px;
+    flex-shrink: 0;
+  }
+
+  .middle {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 769px) {
+  .container {
+    width: 100%;
+    height: 380px;
+    flex-shrink: 0;
+  }
+  .content {
+    width: 675px;
+    height: 325px;
+  }
+  .middle {
+    width: 100%;
+
+    gap: 60px;
+  }
+  .cards {
+    gap: 6px;
+    width: 305px;
+    height: 154px;
+    flex-shrink: 0;
+  }
+  .cards h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .cards h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .cards button {
+    width: 106px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+  .cards button span {
+    width: 86px;
+    height: 15px;
+    flex-shrink: 0;
+    font-size: 8px;
+    font-weight: 700;
+  }
+  .cards svg {
+    width: 305px;
+    height: 154px;
+  }
+
+  .title {
+    width: 372px;
+    height: 79px;
+    flex-shrink: 0;
+  }
+  .title h1 {
+    font-size: 42px;
+  }
+
+  .bottom {
+    margin-top: -110px;
+    position: relative;
+    width: 540px;
+    height: 51px;
+    flex-shrink: 0;
+  }
+  .bottom h1 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+/*  */
+/*  */
+
+@media (max-width: 767px) and (min-width: 1px) {
+  .container {
+    width: 100%;
+    height: 730px;
+    flex-shrink: 0;
+  }
+  .content {
+    width: 348px;
+    height: 616px;
+    flex-shrink: 0;
+  }
+
+  .title {
+    width: 309px;
+    height: 96px;
+    flex-shrink: 0;
+  }
+  .title h1 {
+    font-size: 48px;
+  }
+
+  .middle {
+    flex-direction: column;
+
+    height: 400px;
+    width: 348px;
+  }
+
+  .cards {
+    margin-bottom: -102px;
+    width: 348px;
+    height: 188px;
+    flex-shrink: 0;
+  }
+
+  .cards svg {
+    width: 348px;
+    height: 188px;
+    flex-shrink: 0;
+  }
+
+  .cards h1 {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .cards h2 {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .cards button {
+    width: 179px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+  .cards button span {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .bottom {
+    width: 316px;
+    height: 62px;
+    flex-shrink: 0;
+  }
+  .bottom h1 {
+    font-size: 14px;
+  }
+}

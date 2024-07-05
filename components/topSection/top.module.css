@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&family=Kalam:wght@700&family=Nosifer&family=Playfair+Display&family=Sofia+Sans+Condensed&display=swap");
+.container {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+
+  height: 545px;
+  background: #f5f8ff;
+}
+
+.content {
+  margin: auto;
+
+  width: 2000px;
+  height: 550px;
+  display: flex;
+}
+
+/* ======== left section ========= */
+/*  */
+/*  */
+/*  */
+.leftTextSection {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+
+  width: 511px;
+  height: 318px;
+  flex-shrink: 0;
+  margin: 105px auto;
+  margin-left: 111px;
+}
+
+.leftTextSection h1 {
+  width: 511px;
+  color: #000;
+  font-family: DM Serif Display;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 116.667% */
+}
+
+.leftTextSection p {
+  width: 473px;
+  height: 96px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.18px;
+}
+
+.leftTextSection button {
+  margin-right: 50px;
+  cursor: pointer;
+  width: 183px;
+  height: 61px;
+  flex-shrink: 0;
+  border-radius: 300px;
+  border: 4px solid #ef8094;
+  background: #fff;
+}
+
+.leftTextSection button span {
+  width: 112px;
+  height: 29px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.92px;
+  transition: 0.5s;
+}
+
+.leftTextSection button:hover {
+  background: #ef8094;
+}
+.leftTextSection button:hover span {
+  color: #fff;
+}
+
+/* ========== rightSide ========== */
+/*  */
+/*  */
+/*  */
+
+.box2 {
+  display: none;
+}
+
+.rightSide {
+  position: absolute;
+  width: 1240px;
+  right: 0;
+  margin-top: 20px;
+  height: 545px;
+  flex-shrink: 0;
+}
+
+.rightSide img {
+  position: relative;
+  bottom: 0;
+  width: 1150px;
+  height: 525px;
+  right: 5%;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .rightSide img {
+    object-fit: cover;
+    position: absolute;
+    width: 55%;
+    height: 250px;
+
+    right: 0;
+  }
+}
+@media (min-width: 1281px) and (max-width: 1650px) {
+  .leftTextSection {
+    top: 4%;
+    z-index: 1;
+    position: absolute;
+    margin-left: 40px;
+  }
+  .rightSide img {
+    position: relative;
+    left: 15%;
+    width: 1000px;
+  }
+}
+@media (max-width: 1280px) and (min-width: 769px) {
+  .rightSide img {
+    display: none;
+  }
+  .rightSide .box2 {
+    display: block;
+    background-image: url("/box2.png");
+    position: absolute;
+    width: 600px;
+    height: 440px;
+    margin: 25px auto;
+    right: 0;
+  }
+
+  .leftTextSection {
+    top: 4%;
+    z-index: 1; /* yazama kısmı */
+    position: absolute;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 1px) {
+  .leftTextSection button {
+    margin-bottom: 20px;
+  }
+  .container {
+    max-width: 767px;
+    height: 985px;
+
+    background: #f5f8ff;
+  }
+
+  .rightSide {
+    margin: 585px auto;
+    left: 0;
+    right: 0;
+    width: 375px;
+    height: 350px;
+  }
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+  }
+  .rightSide img {
+    position: relative;
+    width: 375px;
+    height: 350px;
+  }
+
+  .leftTextSection {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 307px;
+    height: 493px;
+    flex-shrink: 0;
+  }
+
+  .leftTextSection h1 {
+    width: 302px;
+
+    color: #000;
+    font-family: DM Serif Text;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px; /* 116.667% */
+  }
+
+  .leftTextSection p {
+    width: 293px;
+    height: 166px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.18px;
+  }
+}

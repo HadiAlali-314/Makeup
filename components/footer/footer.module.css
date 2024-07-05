@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&family=Kalam:wght@700&family=Nosifer&family=Playfair+Display&family=Sofia+Sans+Condensed&display=swap");
+.container {
+  width: 100%;
+  height: 524px;
+  flex-shrink: 0;
+}
+.content {
+  background-color: rgba(196, 196, 196, 0.09);
+  border-radius: 5px;
+  border: 2px solid #c4c4c4;
+  border-color: rgba(196, 196, 196, 0.3);
+  position: relative;
+  margin: 20px auto;
+
+  width: 1381px;
+  height: 479px;
+  flex-shrink: 0;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 44px auto;
+
+  width: 1220px;
+  height: 38px;
+}
+
+.social {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  gap: 31px;
+
+  width: 197px;
+  height: 26px;
+}
+
+.logo {
+  display: flex;
+  align-self: flex-start;
+}
+
+/* cards */
+
+.cards {
+  margin: 55px auto;
+  width: 1220px;
+  height: 216px;
+  flex-direction: row;
+  display: flex;
+  gap: 175px;
+}
+.cards .card {
+  width: 163px;
+  height: 216px;
+  flex-shrink: 0;
+}
+
+.card li {
+  list-style: none;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.68px;
+  height: 29px;
+}
+
+.card h1 {
+  margin-bottom: 15px;
+  color: #000;
+  font-family: DM Sans;
+  height: 29px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 2.4px;
+}
+
+/* rights */
+.rights {
+  border-top: 2px solid #c4c4c4;
+  border-color: rgba(196, 196, 196, 0.3);
+  border-radius: 2px;
+  position: absolute;
+
+  width: 1380px;
+  height: 80px;
+  display: flex;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  align-items: center;
+  padding-left: 78px;
+}
+
+.rights h1 {
+  color: #000;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.68px;
+  height: 29px;
+}
+
+@media (min-width: 1281px) and (max-width: 1650px) {
+  .container {
+    width: 100%;
+    height: 725px;
+    flex-shrink: 0;
+  }
+  .top {
+    width: 600px;
+  }
+  .content {
+    width: 688px;
+    height: 705px;
+    flex-shrink: 0;
+  }
+  .cards {
+    width: 588px;
+    height: 430px;
+    flex-shrink: 0;
+    display: grid;
+    row-gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .rights {
+    width: 688px;
+    height: 100px;
+    position: absolute;
+
+    margin: auto;
+    padding-right: 77px;
+    padding-bottom: 20px;
+  }
+  .rights h1 {
+    color: #000;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.68px;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 769px) {
+  .container {
+    width: 100%;
+    height: 725px;
+    flex-shrink: 0;
+  }
+  .top {
+    width: 600px;
+  }
+  .content {
+    width: 688px;
+    height: 705px;
+    flex-shrink: 0;
+  }
+  .cards {
+    width: 588px;
+    height: 430px;
+    flex-shrink: 0;
+    display: grid;
+    row-gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .rights {
+    width: 688px;
+    height: 100px;
+    position: absolute;
+
+    margin: auto;
+    padding-right: 77px;
+    padding-bottom: 20px;
+  }
+  .rights h1 {
+    color: #000;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.68px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 1px) {
+  .container {
+    width: 100%;
+    height: 825px;
+    flex-shrink: 0;
+  }
+  .social {
+    display: none;
+  }
+  .top {
+    width: 280px;
+  }
+  .content {
+    width: 348px;
+    height: 767.103px;
+    flex-shrink: 0;
+  }
+  .card {
+    width: 163px;
+    height: 209px;
+    flex-shrink: 0;
+  }
+  .cards {
+    margin: auto 34px;
+    width: 588px;
+    height: 430px;
+    flex-shrink: 0;
+    display: grid;
+    row-gap: 32px;
+    grid-template-columns: repeat(2, 10px);
+  }
+  .rights {
+    width: 348px;
+    height: 150px;
+    position: absolute;
+
+    margin: auto;
+    padding-right: 77px;
+    padding-bottom: 20px;
+    flex-direction: column;
+
+    gap: 9px;
+    padding-top: 20px;
+    align-items: center;
+  }
+  .rights h1:first-child {
+    width: 284px;
+    margin-bottom: 9px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: DM Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.32px;
+  }
+  .rights h1 {
+    color: #000;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.68px;
+  }
+}
